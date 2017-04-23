@@ -1,0 +1,43 @@
+body {
+    background: url(../background.jpeg) no-repeat fixed;
+    background-size: cover;
+    margin: 0;
+}
+.main-section {
+ 
+    text-align: initial;
+
+    background: white;
+    padding: 15px;
+    opacity: .9;
+}
+
+button{
+    border-radius: 0 !important;
+
+    }
+.main-menu {
+   
+    text-align: center;
+   
+    padding: 0;
+    background: transparent;
+}
+
+.main-menu ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background: white;
+    padding: 15px ;
+}
+
+.main-menu ul li:hover {
+    opacity: .7;
+}

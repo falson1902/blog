@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,3 +44,63 @@
         </div>
     </body>
 </html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+                        <script src={{asset("bootstrap/js/jquery-3.2.0.min.js")}}></script>
+            <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-9">
+        <link href="{{asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{asset('css/main.css') }}">
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="container-fluid">
+          <header>
+            </header>
+        @include('menu')
+        
+        <button id="change_background"type="button" class="btn btn-default">Change background</button>
+        <div class="row">
+        
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+              <section clas="main-section">
+            <article class=" main-section">
+               
+                @yield('content')
+            </article>
+              </section>
+          </div>
+          <div class="col-sm-2"></div>
+        
+            </div>
+        
+         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+    </html>
+    </body>
+</html>
+
+<script>
+    var zmienna = 0;
+    $("#change_background").click(function(){
+        if(zmienna === 0)
+        {
+            zmienna = 1;
+            $('body').css('background', 'url("../background_new.jpeg") no-repeat fixed')
+            $('body').css('background-size', 'cover')
+        }
+        else
+        {
+            zmienna = 0;
+            $('body').css('background', 'url("../background.jpeg") no-repeat fixed')
+        }
+ });
+</script>
